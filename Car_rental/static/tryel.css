@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+.sk{
+    width: 100%;
+    height: 100vh;
+    background-image: rgba(246, 241, 241, 0.955);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+    
+}
+@media screen and (max-width: 576px){
+    .sk{
+        background-image: url(IMG_20220707_201022.jpg);
+    }
+    
+}
+.navbar{
+    width: 100%;
+    
+    padding: 35px 0;
+    display: flex;
+   align-items: center;
+    /* justify-content: space-around; */
+    background-color: #E9F6FF;
+    
+}
+.logo{
+    width: 75px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    padding-top: 12px;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+.navbar ul li::after{
+    content: '';
+    height: 4px;
+    width: 0;
+    background:#ffbaba;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    background: linear-gradient(rgba(152, 156, 216, 0.45),rgba(0,0,0,0.45));
+    padding: 50px;
+    margin: 40px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 480px;
+    justify-content: center;
+    border: 3px solid black;
+
+}
+.form{
+    background: linear-gradient(rgba(86, 115, 222, 0.3),rgba(0,0,0,0.3));
+    margin: 45px;
+    padding: 30px;
+    width: 367px;
+    border: 4px solid rgb(49, 47, 47);
+    color: rgb(0, 0, 0);
+    flex-wrap: wrap;
+    background:linear-gradient(rgba(0,0,0,0.3) ,rgba(0,0,0,0.3)); ;
+}
+.content:hover{
+    background:linear-gradient(rgba(101, 97, 97, 0.3),rgba(101, 97, 97, 0.3));
+}  
+.form:hover{
+    background: linear-gradient(rgba(101, 97, 97, 0.3),rgba(101, 97, 97, 0.3));
+}  
+.nav{
+    display: flex;
+    
+}
+.innav{
+   margin: 0;
+}
+.last{
+    color: rgb(0, 0, 0);
+    background: linear-gradient(rgba(49, 47, 47, 0.3),rgba(0,0,0,0.3));
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 140px;
+}
+#btn{
+    margin-left: 120px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background:linear-gradient(rgba(167, 10, 10, 0.3),rgba(101, 97, 97, 0.3)) ;
+    color: aliceblue;
+    padding: 15px;
+    border: 3px solid black;
+    cursor: pointer;
+}
+.form #name_error,
+.form #email_error,
+.form #number_error{
+    margin-left: 25px;
+    background: rgba(2555,0,0,0.1);
+    text-align: center;
+    border: 1px solid red;
+    display: none;
+}
+.mid{
+    height: 270px;
+    border: 3px solid black;
+    background: linear-gradient(rgba(0,0,0,0.3) ,rgba(0,0,0,0.3));
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.upname h1 {
+    color: rgb(0, 0, 0);
+    font-family: Playfair Display;
+    
+}
+.innerup{
+    display: flex;
+    justify-content: space-between;
+}
+.one{
+    width: 160px;
+    height:180px;
+    background: linear-gradient(rgba(130, 73, 73, 0.3),rgba(101, 97, 97, 0.3)) ;
+    margin: 30px 15px;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius:5px;
+}
+.one button{
+    margin-top: 10px;
+    background-color: rgb(51, 48, 48);
+    color: aliceblue;
+    padding: 5px;
+}
+.two{
+    width: 160px;
+    height:180px;
+    background: linear-gradient(rgba(130, 73, 73, 0.3),rgba(101, 97, 97, 0.3)) ;
+    margin: 30px 15px;
+    padding: 5px;
+    border: 3px solid black;
+    padding-bottom:5px ;
+    border-radius:5px;
+
+}
+.two button{
+    background-color: rgb(51, 48, 48);
+    color: aliceblue;
+    padding: 5px;
+    
+}
+.three{
+    width: 160px;
+    height:180px;
+    background: linear-gradient(rgba(130, 73, 73, 0.3),rgba(101, 97, 97, 0.3)) ;
+    margin: 30px 15px;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius:5px;
+}
+.three button{
+    margin-top: 55px;
+    background-color: rgb(51, 48, 48);
+    color: aliceblue;
+    padding: 5px;
+
+}
+.four{
+    width: 160px;
+    height:180px;
+    background:linear-gradient(rgba(130, 73, 73, 0.3),rgba(101, 97, 97, 0.3)) ;
+    margin: 30px 15px;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius:5px;
+}
+.four button{
+    margin-top: 50px;
+    background-color: rgb(51, 48, 48);
+    color: aliceblue;
+    padding: 5px;
+}
